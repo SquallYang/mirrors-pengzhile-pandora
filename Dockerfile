@@ -10,4 +10,6 @@ ADD . .
 
 RUN pip --no-cache-dir install --upgrade pip && pip --no-cache-dir install .[api,cloud]
 
+EXPOSE 8899
+
 ENTRYPOINT ["bin/startup.sh"]
